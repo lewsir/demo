@@ -12,7 +12,7 @@ RUN echo 'Asia/Shanghai' >/etc/timezone
 #启动容器时的进程
 ######CMD ["java", "-version"]
 # 容器启动时执行的命令
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
 #暴露11109端口
 EXPOSE 8080
 # 声明一个挂载点，容器内此路径会对应宿主机的某个文件夹
